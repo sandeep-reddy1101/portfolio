@@ -1,8 +1,16 @@
+"use client"
+import Nav from "@/components/nav";
+import { useState } from "react";
 
 export default function Home() {
+  let [darkMode, setDarkMode] = useState(false);
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
   return (
-    <div className="text-2xl flex justify-center">
-      <span className="pr-2">Hello</span> <span className="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 inline-block text-transparent bg-clip-text">Sandeep Reddy</span>
+    <div className={darkMode ? "dark" : ""}>
+      <Nav darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      
     </div>
-  )
+  );
 }
