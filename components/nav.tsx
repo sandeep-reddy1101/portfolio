@@ -14,9 +14,9 @@ export default function Nav({ darkMode, toggleDarkMode }: navProps) {
 
   const navList = [
     { name: "Home", link: "#home" },
-    { name: "About", link: "#" },
-    { name: "Projects", link: "#" },
-    { name: "Contact", link: "#" },
+    { name: "About", link: "#about" },
+    { name: "Projects", link: "#projects" },
+    { name: "Contact", link: "#contact" },
   ];
 
   const toggleMobileMenu = () => {
