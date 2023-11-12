@@ -2,6 +2,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Link from "next/link";
+import Button from "./button";
 
 export default function Hero() {
   const socialMedia = [
@@ -24,19 +25,17 @@ export default function Hero() {
           </p>
         </div>
         <div className="mt-12 text-center">
-          <button className="bg-violet-600 text-white text-base font-semibold py-3 px-10 rounded uppercase transform transition-transform hover:translate-y-[-3px] drop-shadow-xl tracking-wide">
-            Projects
-          </button>
+          <Button>Projects</Button>
         </div>
       </div>
-      <div className="hidden md:block absolute top-1/2 left-0 transform -translate-y-1/2 bg-white drop-shadow-2xl p-2 dark:bg-gray-600 rounded">
+      <div className="hidden md:block absolute top-1/2 left-0 transform -translate-y-1/2 bg-white drop-shadow-2xl p-2 dark:bg-gray-900 rounded">
         <div className="w-12">
           {socialMedia.map((item) => {
             return (
               <Link
                 key={item.name}
                 href={item.link}
-                className="w-full block p-3 transition duration-300 hover:bg-gray-200 rounded-md dark:hover:bg-gray-100"
+                className="w-full block p-3 transition duration-300 hover:bg-gray-200 rounded-md dark:hover:bg-gray-700 dark:text-white"
               >
                 {item.icon}
               </Link>
