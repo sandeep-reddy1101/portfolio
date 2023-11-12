@@ -1,7 +1,9 @@
 "use client";
 import About from "@/components/about";
+import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Nav from "@/components/nav";
+import Projects from "@/components/projects";
 import { useState } from "react";
 
 export default function Home() {
@@ -14,6 +16,8 @@ export default function Home() {
       <Nav darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Hero />
       <About />
+      <Projects />
+      <Footer />
     </div>
   );
 }
