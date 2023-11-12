@@ -1,15 +1,9 @@
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import Link from "next/link";
 import Button from "./button";
+import { socialMedia } from "@/lib/data";
 
 export default function Hero() {
-  const socialMedia = [
-    { icon: <LinkedInIcon />, name: "LinkedIn", link: "/" },
-    { icon: <TwitterIcon />, name: "X", link: "/" },
-    { icon: <GitHubIcon />, name: "Github", link: "/" },
-  ];
+  
   return (
     <div id="home" className="relative min-h-screen flex items-center justify-center">
       <div className="absolute inset-0 bg-cover bg-center z-0 bg-gray-100 dark:bg-gray-800"></div>
