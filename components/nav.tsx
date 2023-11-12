@@ -45,7 +45,7 @@ export default function Nav({ darkMode, toggleDarkMode }: navProps) {
             {darkMode ? (
               <WbIncandescentIcon className="text-yellow-200" />
             ) : (
-              <DarkModeIcon />
+              <DarkModeIcon className="text-black"/>
             )}
           </div>
           <button
