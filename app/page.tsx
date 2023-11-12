@@ -1,4 +1,5 @@
-"use client"
+"use client";
+import Hero from "@/components/hero";
 import Nav from "@/components/nav";
 import { useState } from "react";
 
@@ -10,7 +11,7 @@ export default function Home() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <Nav darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      
+      <Hero />
     </div>
   );
 }
