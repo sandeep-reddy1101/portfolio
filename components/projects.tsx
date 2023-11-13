@@ -1,6 +1,7 @@
 import Button from "./button";
 import SectionHeader from "./section-header";
 import { projects } from "../lib/data";
+import Link from "next/link";
 
 export default function Projects() {
   const heading = "Projects";
@@ -29,7 +30,7 @@ export default function Projects() {
                 <div className="mb-8 leading-6 max-w-xl text-base text-gray-700 dark:text-gray-300">
                   {project.summary}
                 </div>
-                <Button>Details</Button>
+                <Link href={`/project/${project.name}`}><Button>Details</Button></Link>
               </div>
             </div>
           );

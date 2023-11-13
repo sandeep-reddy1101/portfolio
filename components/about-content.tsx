@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Button from "./button";
+import Pill from "./pill";
 
 export default function AboutContent() {
   const skills = [
@@ -38,12 +39,7 @@ export default function AboutContent() {
         <div className="flex flex-wrap">
           {skills.map((item, idx) => {
             return (
-              <div
-                key={idx}
-                className="px-6 py-3 mb-4 mr-4 text-sm rounded bg-gray-200 font-semibold text-gray-700 dark:bg-gray-800 dark:text-gray-300"
-              >
-                {item}
-              </div>
+              <Pill key={idx} skill={item}/>
             );
           })}
         </div>
