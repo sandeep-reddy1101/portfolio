@@ -8,6 +8,7 @@ import Loading from "@/components/loading";
 import Pill from "@/components/pill";
 import Link from "next/link";
 import Button from "@/components/button";
+import OutlineButton from "@/components/outline-button";
 
 interface projectType {
   name: string;
@@ -73,7 +74,7 @@ export default function Project() {
                   return (
                     <div
                       key={idx}
-                      className="text-base leading-6 mb-6 text-gray-700 dark:text-gray-300"
+                      className="text-base leading-6 mb-6 text-gray-700 dark:text-gray-300 font-medium tracking-wide"
                     >
                       {desc}
                     </div>
@@ -98,15 +99,7 @@ export default function Project() {
                   <Button>Github</Button>
                 </Link>
                 <Link href={"/#projects"}>
-                  <button
-                    className=" text-violet-600 bg-inherit border-2 border-violet-600 text-base font-semibold px-10 rounded uppercase transform transition-transform hover:translate-y-[-3px]  tracking-wide"
-                    style={{
-                      paddingTop: "calc(0.75rem - 2px)",
-                      paddingBottom: "calc(0.75rem - 2px)",
-                    }}
-                  >
-                    Go Back
-                  </button>
+                  <OutlineButton>Go Back</OutlineButton>
                 </Link>
               </div>
             </div>

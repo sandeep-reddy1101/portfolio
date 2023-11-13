@@ -20,7 +20,7 @@ export default function HeroContent({
         {header}
       </h1>
       <div className="mx-auto mt-8 md:max-w-3xl">
-        <p className="text-lg text-gray-700 text-center leading-6 dark:text-slate-200">
+        <p className="text-lg font-medium tracking-wide text-gray-700 text-center leading-6 dark:text-slate-200">
           {subHeader}
         </p>
       </div>
