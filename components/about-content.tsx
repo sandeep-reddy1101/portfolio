@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "./button";
 
 export default function AboutContent() {
@@ -29,7 +30,7 @@ export default function AboutContent() {
           {"I\'m open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don\'t hesitate to contact me."}
         </div>
         <div className="mt-8">
-          <Button>Contact</Button>
+          <Link href={"#contact"}><Button>Contact</Button></Link>
         </div>
       </div>
       <div>
