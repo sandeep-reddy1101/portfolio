@@ -8,7 +8,7 @@ export default function Logo() {
       className="flex items-center space-x-3 rtl:space-x-reverse"
     >
       <img src={logoInfo.image} className="h-10 rounded-full" alt="app logo" />
-      <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white capitalize ">
+      <span className="self-center text-base font-bold whitespace-nowrap dark:text-white uppercase tracking-wider">
         {logoInfo.name}
       </span>
     </Link>

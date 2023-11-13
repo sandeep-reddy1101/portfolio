@@ -20,7 +20,7 @@ export default function Projects() {
             >
               <div className="overflow-hidden md:col-span-3">
                 <img
-                  className="w-full block object-cover rounded-md h-96 md:h-72 lg:h-80 xl:h-96"
+                  className="w-full block object-cover rounded-md h-72 sm:h-80 md:max-h-96 md:h-72 lg:h-auto"
                   src={project.image}
                   alt={project.name}
                 />
