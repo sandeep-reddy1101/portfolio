@@ -3,9 +3,11 @@ import Button from "./button";
 import { socialMedia } from "@/lib/data";
 
 export default function Hero() {
-  
   return (
-    <div id="home" className="relative min-h-screen flex items-center justify-center">
+    <div
+      id="home"
+      className="relative min-h-screen flex items-center justify-center"
+    >
       <div className="absolute inset-0 bg-cover bg-center z-0 bg-gray-100 dark:bg-gray-800"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-screen-xl w-11/12">
         <h1 className="text-5xl uppercase tracking-wide text-center text-black font-bold dark:text-white">
@@ -19,7 +21,9 @@ export default function Hero() {
           </p>
         </div>
         <div className="mt-12 text-center">
-          <Button>Projects</Button>
+          <Link href={"#projects"}>
+            <Button>Projects</Button>
+          </Link>
         </div>
       </div>
       <div className="hidden md:block absolute top-1/2 left-0 transform -translate-y-1/2 bg-white drop-shadow-2xl p-2 dark:bg-gray-900 rounded">
