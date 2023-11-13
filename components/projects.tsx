@@ -25,7 +25,7 @@ export default function Projects() {
                 />
               </div>
               <div className="col-auto md:col-span-2 flex flex-col justify-center items-center md:items-start p-2">
-                <div className="mb-4 font-bold text-xl text-black dark:text-white">{project.name}</div>
+                <div className="mb-4 font-bold text-2xl text-black dark:text-white">{project.name}</div>
                 <div className="mb-8 leading-6 max-w-xl text-base text-gray-700 dark:text-gray-300">
                   {project.summary}
                 </div>
