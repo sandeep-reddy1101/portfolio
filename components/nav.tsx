@@ -1,15 +1,9 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
-import WbIncandescentIcon from "@mui/icons-material/WbIncandescent";
+import { ThemeSwitcher } from "./theme-switcher";
 
-interface navProps {
-  darkMode: boolean;
-  toggleDarkMode: () => void;
-}
-
-export default function Nav({ darkMode, toggleDarkMode }: navProps) {
+export default function Nav() {
   let [mobileMenu, setMobileMenu] = useState(false);
 
   const navList = [
@@ -36,18 +30,7 @@ export default function Nav({ darkMode, toggleDarkMode }: navProps) {
           </span>
         </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <div
-            className={`cursor-pointer p-2 ${
-              darkMode ? "text-gray-300" : "text-gray-700"
-            }`}
-            onClick={toggleDarkMode}
-          >
-            {darkMode ? (
-              <WbIncandescentIcon className="text-yellow-200" />
-            ) : (
-              <DarkModeIcon className="text-black"/>
-            )}
-          </div>
+          {<ThemeSwitcher />}
           <button
             data-collapse-toggle="navbar-cta"
             type="button"
