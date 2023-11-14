@@ -3,7 +3,7 @@ import HeroContainer from "@/components/hero-container";
 import HeroContent from "@/components/hero-content";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { projects } from "@/lib/data";
+import { projects } from "@/lib/projectsInfo";
 import Loading from "@/components/loading";
 import Pill from "@/components/pill";
 import Link from "next/link";
@@ -34,12 +34,11 @@ export default function Project() {
 
   useEffect(() => {
     const currentProject = projects.find((item) => item.name === projectName);
-    console.log(currentProject);
     if (currentProject) {
       setProject(currentProject);
       setHeroContent({
         header: currentProject.name,
-        subHeader: `This page contains the case study of ${currentProject.name} Website which includes the Project Overview, Tools Used and Live or Github Links to the official product.`,
+        subHeader: currentProject.summary,
         buttonName: currentProject.live ? "Live" : "Github",
         link: currentProject.live ? currentProject.live : currentProject.github,
       });
@@ -83,7 +82,7 @@ export default function Project() {
               </div>
               <div className="mb-8">
                 <div className="mb-6 font-bold text-2xl dark:text-gray-100">
-                  Tools Used
+                  Tech Used
                 </div>
                 <div className="flex flex-wrap">
                   {project.technologies.map((skill, idx) => {
