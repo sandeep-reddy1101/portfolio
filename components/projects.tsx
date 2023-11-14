@@ -2,11 +2,12 @@ import Button from "./button";
 import SectionHeader from "./section-header";
 import { projects, projectHeaders } from "../lib/projectsInfo";
 import Link from "next/link";
+import { theme } from "@/lib/theme";
 
 export default function Projects() {
   
   return (
-    <section id="projects" className="py-32 bg-gray-100 dark:bg-gray-800">
+    <section id="projects" className={`py-32 ${theme.projects.backgroundColor}`}>
       <div className="max-w-screen-xl w-11/12 m-auto">
         <SectionHeader {...projectHeaders} />
         {projects.map((project, idx) => {
@@ -23,8 +24,8 @@ export default function Projects() {
                 />
               </div>
               <div className="col-auto md:col-span-2 flex flex-col justify-center items-center md:items-start p-2">
-                <div className="mb-4 font-bold text-2xl text-black dark:text-white">{project.name}</div>
-                <div className="mb-8 leading-6 max-w-xl text-base text-gray-700 dark:text-gray-300">
+                <div className={`mb-4 font-bold text-2xl ${theme.projects.projectNameTextColor}`}>{project.name}</div>
+                <div className={`mb-8 leading-6 max-w-xl text-base font-medium ${theme.projects.projectSummaryTextColor}`}>
                   {project.summary}
                 </div>
                 <Link href={`/project/${project.name}`}><Button>Details</Button></Link>

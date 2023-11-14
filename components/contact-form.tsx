@@ -1,14 +1,15 @@
 "use client";
 import { useRef, useState } from "react";
 import Button from "./button";
+import {theme} from "@/lib/theme"
 
 export default function ContactForm() {
   let name = useRef<HTMLInputElement>(null);
   let email = useRef<HTMLInputElement>(null);
   let message = useRef<HTMLTextAreaElement>(null);
   let [successMessage, setSuccessMessage] = useState("");
-  const inputClasses = "text-gray-800 dark:text-gray-300 p-4 w-full mt-2 border border-solid border-gray-100 dark:border-gray-700 text-sm bg-gray-100 dark:bg-gray-700 rounded-md font-medium focus:none";
-  const labelClasses = "text-gray-600 text-sm tracking-wide text-left font-semibold dark:text-gray-200";
+  const inputClasses = `${theme.contact.formInputTextColor} p-4 w-full mt-2 border border-solid ${theme.contact.formInputBorderColor} text-sm ${theme.contact.formInputbackgroundColor} rounded-md font-medium focus:none`;
+  const labelClasses = `text-gray-600 text-sm tracking-wide text-left font-semibold dark:text-gray-200`;
 
   const handleFormSubmit = (e: any) => {
     e.preventDefault();

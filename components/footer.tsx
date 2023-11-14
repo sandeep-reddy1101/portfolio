@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { socialMedia } from "@/lib/socialMedia";
-import {footer} from '@/lib/footerInfo';
+import { footer } from "@/lib/footerInfo";
+import { theme } from "@/lib/theme";
 
 export default function Footer() {
   return (
-    <footer className="text-white bg-black">
+    <footer
+      className={`${theme.footer.backgroundColor} ${theme.footer.textColor}`}
+    >
       <div className="max-w-screen-xl w-11/12 m-auto">
         <div className="block text-center md:text-left md:flex md:justify-between py-12 md:py-16 lg:py-20">
           <div className="mb-12 order-2">
@@ -14,7 +17,11 @@ export default function Footer() {
             <div className="mt-4">
               {socialMedia.map((item) => {
                 return (
-                  <Link key={item.name} href={item.link} className="mr-3 hover:text-violet-400">
+                  <Link
+                    key={item.name}
+                    href={item.link}
+                    className={`mr-3 hover:${theme.footer.socialIconHover}`}
+                  >
                     {item.icon}
                   </Link>
                 );
@@ -25,12 +32,14 @@ export default function Footer() {
             <div className="uppercase text-xl font-semibold tracking-wider">
               {footer.name}
             </div>
-            <div className="mt-4 text-gray-200 text-xs font-medium leading-6">
+            <div className={`mt-4 ${theme.footer.subHeadingTextColor} text-xs font-medium leading-6`}>
               {footer.subHeading}
             </div>
           </div>
         </div>
-        <div className="text-gray-300 text-xs text-center py-9 border-t-[1px] border-slate-200">
+        <div
+          className={`${theme.footer.subHeadingTextColor} text-xs text-center py-9 border-t-[1px] ${theme.footer.lineColor}`}
+        >
           © Copyright {new Date().getFullYear()}. Made by{" "}
           <Link href={"/"} className="font-bold underline">
             {footer.name}
