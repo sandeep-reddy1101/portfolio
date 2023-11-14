@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Button from "./button";
+import TextGradiant from "./text-gradiant";
 
 interface heroContentProps {
   header: string;
@@ -17,7 +18,7 @@ export default function HeroContent({
   return (
     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-screen-xl w-11/12">
       <h1 className="text-5xl uppercase tracking-wide text-center text-black font-bold dark:text-white">
-        {header}
+        {"Hey, I\'m "}<TextGradiant>{header}</TextGradiant>
       </h1>
       <div className="mx-auto mt-8 md:max-w-3xl">
         <p className="text-lg font-medium tracking-wide text-gray-700 text-center leading-6 dark:text-slate-200">

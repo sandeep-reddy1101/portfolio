@@ -1,17 +1,14 @@
 import Button from "./button";
 import SectionHeader from "./section-header";
-import { projects } from "../lib/projectsInfo";
+import { projects, projectHeaders } from "../lib/projectsInfo";
 import Link from "next/link";
 
 export default function Projects() {
-  const heading = "Projects";
-  const subHeading =
-    "Here you will find some of the personal and clients projects that I created with each project containing its own case study";
-
+  
   return (
     <section id="projects" className="py-32 bg-gray-100 dark:bg-gray-800">
       <div className="max-w-screen-xl w-11/12 m-auto">
-        <SectionHeader heading={heading} subHeading={subHeading} />
+        <SectionHeader {...projectHeaders} />
         {projects.map((project, idx) => {
           return (
             <div
