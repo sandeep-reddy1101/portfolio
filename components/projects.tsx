@@ -1,6 +1,6 @@
 import Button from "./button";
 import SectionHeader from "./section-header";
-import { projects } from "../lib/data";
+import { projects } from "../lib/projectsInfo";
 import Link from "next/link";
 
 export default function Projects() {
@@ -20,7 +20,7 @@ export default function Projects() {
             >
               <div className="overflow-hidden md:col-span-3">
                 <img
-                  className="w-full block object-cover rounded-md h-72 sm:h-80 md:max-h-96 md:h-72 lg:h-auto"
+                  className="w-full block object-cover rounded-md h-64 sm:h-80 md:max-h-96 md:h-72 lg:h-auto"
                   src={project.image}
                   alt={project.name}
                 />

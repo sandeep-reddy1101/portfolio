@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { socialMedia } from "@/lib/data";
+import { socialMedia } from "@/lib/socialMedia";
 import { heroInfo } from "@/lib/data";
 
 import HeroContent from "./hero-content";
