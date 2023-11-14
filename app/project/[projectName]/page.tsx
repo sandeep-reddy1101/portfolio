@@ -52,9 +52,9 @@ export default function Project() {
   return (
     <>
       <HeroContainer id={projectName}>
-        <HeroContent {...heroContent} />
+        <HeroContent {...heroContent} home={false}/>
       </HeroContainer>
-      <div className="br-gray-200 dark:bg-gray-900">
+      <div className="bg-white dark:bg-gray-900">
         <div className="max-w-screen-xl w-11/12 m-auto">
           <div className="m-auto max-w-3xl py-32 px-4 lg:px-0 w-full">
             <div className="mb-8 w-full">
@@ -66,7 +66,7 @@ export default function Project() {
             </div>
             <div className="m-auto max-w-2xl w-full">
               <div className="mb-8">
-                <div className="mb-6 font-bold text-2xl dark:text-gray-100">
+                <div className="mb-6 font-bold text-2xl text-black dark:text-gray-100">
                   Project Overview
                 </div>
                 {project.description.map((desc, idx) => {
@@ -81,7 +81,7 @@ export default function Project() {
                 })}
               </div>
               <div className="mb-8">
-                <div className="mb-6 font-bold text-2xl dark:text-gray-100">
+                <div className="mb-6 font-bold text-2xl text-black dark:text-gray-100">
                   Tech Used
                 </div>
                 <div className="flex flex-wrap">
@@ -91,7 +91,7 @@ export default function Project() {
                 </div>
               </div>
               <div>
-                <div className="mb-6 font-bold text-2xl dark:text-gray-100">
+                <div className="mb-6 font-bold text-2xl text-black dark:text-gray-100">
                   Links
                 </div>
                 <Link href={project.github} className="mr-4">
