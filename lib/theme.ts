@@ -13,16 +13,17 @@ export const theme = {
   section: {
     backgroundColorPill: "bg-purple-700",
     headerTextColor: "text-black dark:text-white",
-    subHeaderTextColor: "text-gray-500 dark:text-gray-300",
+    subHeaderTextColor: "text-gray-500 dark:text-gray-400",
   },
   about: {
     backgroundColor: "bg-white dark:bg-gray-900",
     aboutContentHeaderTextColor: "text-black dark:text-white",
-    aboutContentTextColor: "text-gray-600 dark:text-gray-400",
+    aboutContentTextColor: "text-gray-600 dark:text-gray-300",
   },
   pill: {
     backgroundColor: "bg-gray-200 dark:bg-gray-800",
     textColor: "text-gray-700 dark:text-gray-300",
+    hoverEffect: "hover:shadow-md hover:transition hover:duration-300 hover:ease-in-out hover:shadow-blue-500/50 hover:scale-95",
   },
   projects: {
     backgroundColor: "bg-gray-100 dark:bg-gray-800",
@@ -45,12 +46,13 @@ export const theme = {
   footer: {
     backgroundColor: "bg-black",
     textColor: "text-white",
-    socialIconHover: "text-violet-400",
+    socialIconHover: "hover:text-violet-400",
     subHeadingTextColor: "text-gray-200",
     lineColor: "border-slate-200",
   },
   social: {
     backgroundColor: "bg-white dark:bg-gray-900",
+    hoverEffect: "shadow-lg shadow-blue-500/50",
     hoverIconBackgroundColor : "hover:bg-gray-200  dark:hover:bg-gray-700",
     hoverIconTextColor: "dark:text-white",
   },

@@ -20,7 +20,7 @@ export default function Footer() {
                   <Link
                     key={item.name}
                     href={item.link}
-                    className={`mr-3 hover:${theme.footer.socialIconHover}`}
+                    className={`mr-3 ${theme.footer.socialIconHover}`}
                   >
                     {item.icon}
                   </Link>

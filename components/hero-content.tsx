@@ -25,7 +25,7 @@ export default function HeroContent({
         {home && "Hey, I'm "}
         <span className="text-gradiant">{header}</span>
       </h1>
-      <div className="mx-auto mt-8 md:max-w-3xl">
+      <div className="mx-auto mt-8 md:max-w-2xl lg:max-w-3xl">
         <p
           className={`text-lg font-medium tracking-wide text-center leading-6 ${theme.hero.subHeaderTextColor}`}
         >
