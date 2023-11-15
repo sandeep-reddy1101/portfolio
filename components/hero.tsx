@@ -12,7 +12,7 @@ export default function Hero() {
     <HeroContainer id="home">
       <HeroContent {...heroInfo} home={true} />
       <div
-        className={`hidden md:block absolute top-1/2 left-0 transform -translate-y-1/2 drop-shadow-2xl p-2 ${theme.social.backgroundColor} rounded`}
+        className={`hidden md:block absolute top-1/2 left-0 transform -translate-y-1/2 ${theme.social.hoverEffect} p-2 ${theme.social.backgroundColor} rounded`}
       >
         <div className="w-12">
           {socialMedia.map((item) => {
