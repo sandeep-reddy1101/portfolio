@@ -1,18 +1,23 @@
-import {theme} from "@/lib/theme";
+import { theme } from "@/lib/theme";
+import SocialIcons from "./social-icons";
 
 export default function HeroContainer({
-  children, id
+  children,
+  id,
 }: {
   children: React.ReactNode;
-  id: string
+  id: string;
 }) {
   return (
     <section
       id={id}
       className="relative min-h-screen flex items-center justify-center"
     >
-      <div className={`absolute inset-0 bg-cover bg-center z-0 ${theme.hero.backgroundColor}`}></div>
+      <div
+        className={`absolute inset-0 bg-cover bg-center z-0 ${theme.hero.backgroundColor}`}
+      ></div>
       {children}
+      <SocialIcons />
     </section>
   );
 }
