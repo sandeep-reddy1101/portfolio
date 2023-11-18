@@ -1,5 +1,6 @@
 import { theme } from "@/lib/theme";
 import SocialIcons from "./social-icons";
+import Blob from "./blob";
 
 export default function HeroContainer({
   children,
@@ -18,6 +19,7 @@ export default function HeroContainer({
       ></div>
       {children}
       <SocialIcons />
+      {/* <Blob/> */}
     </section>
   );
 }

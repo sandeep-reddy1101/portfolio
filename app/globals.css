@@ -20,3 +20,16 @@ textarea:focus {
     background-clip: text;
     color: transparent;
 }
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-5px) scale(1.02);
+    }
+}
+
+.animate-move-up-down {
+    animation: moveUpDown 2s infinite alternate ease-in-out;
+}
