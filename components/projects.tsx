@@ -24,7 +24,7 @@ export default function Projects() {
                 />
               </div>
               <div className="col-auto lg:col-span-2 flex flex-col justify-center items-center lg:items-start p-2">
-                <div className={`mb-4 font-bold text-2xl ${theme.projects.projectNameTextColor}`}>{project.name}</div>
+                <div className={`mb-4 font-bold text-2xl uppercase ${theme.projects.projectNameTextColor}`}>{project.name}</div>
                 <div className={`mb-8 leading-6 max-w-xl md:max-w-3xl text-base font-medium ${theme.projects.projectSummaryTextColor}`}>
                   {project.summary}
                 </div>

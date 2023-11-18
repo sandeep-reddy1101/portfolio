@@ -1,3 +1,4 @@
+// Here you can change the background colors and text colors in the website but you need to know a bit of tailwind css.
 export const theme = {
   hero: {
     backgroundColor: "bg-gray-100 dark:bg-gray-800",
