@@ -24,7 +24,8 @@ export const theme = {
   pill: {
     backgroundColor: "bg-gray-200 dark:bg-gray-800",
     textColor: "text-gray-700 dark:text-gray-300",
-    hoverEffect: "hover:shadow-md hover:transition hover:duration-300 hover:ease-in-out hover:shadow-blue-500/50 hover:scale-95",
+    hoverEffect:
+      "hover:shadow-md hover:transition hover:duration-300 hover:ease-in-out hover:shadow-blue-500/50 hover:scale-95",
   },
   projects: {
     backgroundColor: "bg-gray-100 dark:bg-gray-800",
@@ -54,7 +55,7 @@ export const theme = {
   social: {
     backgroundColor: "bg-white dark:bg-gray-900",
     hoverEffect: "shadow-lg shadow-blue-500/50",
-    hoverIconBackgroundColor : "hover:bg-gray-200  dark:hover:bg-gray-700",
+    hoverIconBackgroundColor: "hover:bg-gray-200  dark:hover:bg-gray-700",
     hoverIconTextColor: "dark:text-white",
   },
   logo: {
@@ -65,5 +66,5 @@ export const theme = {
     menuIconHoverBackgroundColor: "hover:bg-gray-100 dark:hover:bg-gray-700",
     backgroundColor: "bg-white dark:bg-gray-900",
     borderColor: "border-gray-200",
-  }
+  },
 };

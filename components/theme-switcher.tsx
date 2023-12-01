@@ -24,10 +24,10 @@ export default function ThemeSwitcher() {
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {theme === "dark" ? (
-        <WbIncandescentIcon className="text-yellow-200" />
+        <WbIncandescentIcon className="text-yellow-200 hover:text-yellow-400 hover:scale-110 transition" />
       ) : (
-        <DarkModeIcon className="text-black" />
+        <DarkModeIcon className="text-gray-800 hover:text-black hover:scale-110 transition" />
       )}
     </div>
   );
-};
+}
