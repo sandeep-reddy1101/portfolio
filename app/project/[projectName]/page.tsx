@@ -52,7 +52,7 @@ export default function Project() {
   return (
     <>
       <HeroContainer id={projectName}>
-        <HeroContent {...heroContent} home={false}/>
+        <HeroContent {...heroContent} home={false} />
       </HeroContainer>
       <div className="bg-white dark:bg-gray-900">
         <div className="max-w-screen-xl w-11/12 m-auto">

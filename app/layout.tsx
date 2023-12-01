@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
 import "./globals.css";
 import { ThemeProvider } from "./theme-provider";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
+import ToasterProvider from "@/providers/ToasterProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
+        <ToasterProvider />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Nav />
           {children}

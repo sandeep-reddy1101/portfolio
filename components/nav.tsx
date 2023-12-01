@@ -1,6 +1,8 @@
 "use client";
+
 import Link from "next/link";
 import { useState } from "react";
+
 import { navList } from "@/lib/data";
 import { theme } from "@/lib/theme";
 
@@ -16,7 +18,9 @@ export default function Nav() {
   };
 
   return (
-    <nav className={` ${theme.nav.borderColor} ${theme.nav.backgroundColor} fixed z-10 w-full drop-shadow-md`}>
+    <nav
+      className={` ${theme.nav.borderColor} ${theme.nav.backgroundColor} fixed z-10 w-full drop-shadow-md`}
+    >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Logo />
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -35,7 +39,7 @@ export default function Nav() {
                 <li key={item.name}>
                   <Link
                     href={item.link}
-                    className="block text-sm font-semibold uppercase py-2 px-3 text-gray-900 rounded hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-white md:dark:hover:text-violet-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    className="block text-sm font-semibold uppercase py-2 px-3 text-gray-900 rounded hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-white md:dark:hover:text-violet-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:transition"
                   >
                     {item.name}
                   </Link>
