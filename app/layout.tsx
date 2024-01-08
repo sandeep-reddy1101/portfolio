@@ -7,6 +7,8 @@ import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 import ToasterProvider from "@/providers/ToasterProvider";
 
+import { Analytics } from "@vercel/analytics/react";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,6 +25,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
         <ToasterProvider />
+        <Analytics />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Nav />
           {children}
